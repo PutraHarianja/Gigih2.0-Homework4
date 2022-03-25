@@ -25,9 +25,9 @@ function App() {
         <div className="App">
             {/* {url, title, artist, album} */}
             <div className='cards'>
-                <Card url={data.album.images[0].url} title={data.name} artist={data.artists.name} album={data.album.name} />
-                <Card url={data.album.images[0].url} title={data.name} artist={data.artists.name} album={data.album.name} />
-                <Card url={data.album.images[0].url} title={data.name} artist={data.artists.name} album={data.album.name} />
+                <Card url={data.album.images[0].url} title={data.name} artist={data.artists[0].name} album={data.album.name} />
+                <Card url={data.album.images[0].url} title={data.name} artist={data.artists[0].name} album={data.album.name} />
+                <Card url={data.album.images[0].url} title={data.name} artist={data.artists[0].name} album={data.album.name} />
             </div>
         </div>
     );
