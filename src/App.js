@@ -25,9 +25,8 @@ function App() {
         <div className="App">
             {/* {url, title, artist, album} */}
             <div className='cards'>
-                <Card url={data.album.images[0].url} title={data.name} artist={data.artists[0].name} album={data.album.name} />
-                <Card url={data.album.images[0].url} title={data.name} artist={data.artists[0].name} album={data.album.name} />
-                <Card url={data.album.images[0].url} title={data.name} artist={data.artists[0].name} album={data.album.name} />
+                {data.map(e =>
+                    <Card url={e.album.images[0].url} title={e.name} artist={e.artists[0].name} album={e.album.name} />)}
             </div>
         </div>
     );
